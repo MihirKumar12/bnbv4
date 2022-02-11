@@ -2,13 +2,13 @@ module.exports = {
 
 mongoLink:'mongodb+srv://mihir:Sonu1111+@cluster0.wilvd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',//database link
 
-bot_token:'5268008527:AAHs7W8M_sqcfhsv1iLwiMCyPyFMgMCjZhY',//bot token
+bot_token:'5096004458:AAEz5UCj0C53qkmGb0ve_vqslboT_ikZLkI',//bot token
 
-bot_name:'BNBAirdropR2_Bot',//bot username without @
+bot_name:'BNBAirdropR3_Bot',//bot username without @
 
 bot_admin:938452476,// admin telegram id
 
-channelsList : ['@AirdropV_Official','@AirdropVSupport','@CryptoFort_News','@CryptoFortChat','@AirdropPeacock','@AirdropMeteorite'],// channels list
+channelsList : ['@CryptoFort_News','@CryptoFortChat'],// channels list
 
 reffer_bonus:'0.00001',// refferal bonus amount
 
@@ -24,6 +24,6 @@ cb_api_secret:'sd',// coinbase secret key
 
 cb_account_id:'sd',// counbase account id for the bot currency
 
-payment_channel:'@bnbbotwithdrawall',// payment channel username
+payment_channel:'@bnbsodsjdsydhjksdhskjdhd',// payment channel username
 
 }
