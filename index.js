@@ -103,7 +103,7 @@ db.collection('pendUsers').insertOne({userId: ctx.from.id})
      db.collection('joinedUsers').insertOne({userId: ctx.from.id, join: true})
     db.collection('balance').updateOne({userId: pData[0].inviter}, {$set: {balance: see}}, {upsert: true})
 ctx.replyWithMarkdown(
-    '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n▪️ Follow *Crypto Fort* [Announcement Twitter](http://twitter.com/CryptoFortNews) And [Sky City Twitter](https://twitter.com/METASkyCity)\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
+    '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
     {disable_web_page_preview: true, reply_markup: { inline_keyboard: [[{text : 'Continue ➡️' , callback_data : 'Continue ➡️'}]], resize_keyboard: true } })
       
       }else{
@@ -111,7 +111,7 @@ ctx.replyWithMarkdown(
 
  
       ctx.replyWithMarkdown(
-  '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n▪️ Follow *Crypto Fort* [Announcement Twitter](http://twitter.com/CryptoFortNews) And [Sky City Twitter](https://twitter.com/METASkyCity)\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
+ '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
     {disable_web_page_preview: true, reply_markup: { inline_keyboard: [[{text : 'Continue ➡️' , callback_data : 'Continue ➡️'}]], resize_keyboard: true } })
          
       }
@@ -222,7 +222,7 @@ if(ctx.message.text==ans){
      db.collection('joinedUsers').insertOne({userId: ctx.from.id, join: true})
     db.collection('balance').updateOne({userId: pData[0].inviter}, {$set: {balance: see}}, {upsert: true})
     ctx.replyWithMarkdown(
-     '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n▪️ Follow *Crypto Fort* [Announcement Twitter](http://twitter.com/CryptoFortNews) And [Sky City Twitter](https://twitter.com/METASkyCity)\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
+      '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
     {disable_web_page_preview: true, reply_markup: { inline_keyboard: [[{text : 'Continue ➡️' , callback_data : 'Continue ➡️'}]], resize_keyboard: true } })
        
       
@@ -231,7 +231,7 @@ if(ctx.message.text==ans){
 
  
       ctx.replyWithMarkdown(
-      '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n▪️ Follow *Crypto Fort* [Announcement Twitter](http://twitter.com/CryptoFortNews) And [Sky City Twitter](https://twitter.com/METASkyCity)\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
+ '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
     {disable_web_page_preview: true, reply_markup: { inline_keyboard: [[{text : 'Continue ➡️' , callback_data : 'Continue ➡️'}]], resize_keyboard: true } })
          
     }
@@ -404,7 +404,7 @@ let dData = await db.collection('allUsers').find({userId: ctx.from.id}).toArray(
      db.collection('joinedUsers').insertOne({userId: ctx.from.id, join: true})
     db.collection('balance').updateOne({userId: pData[0].inviter}, {$set: {balance: see}}, {upsert: true})
     ctx.replyWithMarkdown(
-           '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n▪️ Follow *Crypto Fort* [Announcement Twitter](http://twitter.com/CryptoFortNews) And [Sky City Twitter](https://twitter.com/METASkyCity)\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
+      '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
     {disable_web_page_preview: true, reply_markup: { inline_keyboard: [[{text : 'Continue ➡️' , callback_data : 'Continue ➡️'}]], resize_keyboard: true } })
        
       
@@ -413,7 +413,7 @@ let dData = await db.collection('allUsers').find({userId: ctx.from.id}).toArray(
 
  
       ctx.replyWithMarkdown(
-      '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n▪️ Follow *Crypto Fort* [Announcement Twitter](http://twitter.com/CryptoFortNews) And [Sky City Twitter](https://twitter.com/METASkyCity)\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
+  '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
     {disable_web_page_preview: true, reply_markup: { inline_keyboard: [[{text : 'Continue ➡️' , callback_data : 'Continue ➡️'}]], resize_keyboard: true } })
          
     }
@@ -508,7 +508,7 @@ if(ctx.message.chat.type != 'private'){
 })
 bot.action('Continue ➡️', async (ctx) => {
   try{
-       ctx.editMessageText('🎧 Follow Our [Twitter I](http://twitter.com/CryptoFortNews) & [Twitter II](https://twitter.com/METASkyCity) For Getting Latest Updates About Crypto',
+       ctx.editMessageText('🎧 Follow Our [Twitter I](https://twitter.com/METASkyCity) & [Twitter II](https://twitter.com/CryptoNite_Club) & [Twitter III](https://twitter.com/METADreamCity) For Getting Latest Updates About Crypto',
   
   {parse_mode:'markdown',disable_web_page_preview: true, reply_markup: { inline_keyboard: [[{text : 'Done' , callback_data : 'Done'}]], resize_keyboard: true } })
   .catch((err) => sendError(err, ctx))
@@ -720,7 +720,7 @@ function rndInt(min, max){
 }
   
    function mustJoin(ctx){
-let msg = '*💧 Join Our All Channels/Group Before Claiming BNB\n\n@AirdropV_Official\n@AirdropVSupport\n@CryptoFort_News\n@CryptoFortChat\n@AirdropPeacock\n@AirdropMeteorite\n\nClick "Check" After Joining.*'  
+let msg = '*💧 Join Our All Channels/Group Before Claiming BNB\n\n@CryptoFort_News\n@CryptoFortChat\n@METASkyCity\n@skycity_ann\n@AirdropKart\n@AirdropBlogger\n\nClick "Check" After Joining.*'  
   ctx.replyWithMarkdown(msg, {disable_web_page_preview:true,    reply_markup: { inline_keyboard: [[{text : '✅ Check' , callback_data : 'Check ✅'}]], resize_keyboard: true }})
    
   }
@@ -728,10 +728,8 @@ let msg = '*💧 Join Our All Channels/Group Before Claiming BNB\n\n@AirdropV_Of
 
 
 function starter (ctx) {
-  ctx.replyWithMarkdown(
-         '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n▪️ Follow *Crypto Fort* [Announcement Twitter](http://twitter.com/CryptoFortNews) And [Sky City Twitter](https://twitter.com/METASkyCity)\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
+ '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
     {disable_web_page_preview: true, reply_markup: { inline_keyboard: [[{text : 'Continue ➡️' , callback_data : 'Continue ➡️'}]], resize_keyboard: true } })
-     
 
    }
 
