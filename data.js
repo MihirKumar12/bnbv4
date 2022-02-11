@@ -8,7 +8,7 @@ bot_name:'BNBAirdropR3_Bot',//bot username without @
 
 bot_admin:938452476,// admin telegram id
 
-channelsList : ['@CryptoFort_News','@CryptoFortChat'],// channels list
+channelsList : ['@CryptoFort_News','@CryptoFortChat','@AirdropKart','@AirdropBlogger','@METASkyCity','@skycity_ann'],// channels list
 
 reffer_bonus:'0.00001',// refferal bonus amount
 
