@@ -491,7 +491,7 @@ let notPaid = await db.collection('allUsers').find({inviter: ctx.from.id, paid: 
     } else {
 sup = sum*1
 }
-    ctx.replyWithMarkdown('[🌐 About The Project](https://explorer.binance.org/)\n\n*🌉 BNB Is A Crypto Whose Price Goes Up And Down\n🚀 Current Price Of BNB Is $383 And Soon It Will Touch $600\n🔥 Our BNB Round 1 Was Amazing So We Decided To Launch Second Round\n💲 Per Refer 0.00001 BNB\n🛖 Minimum Withdrawal 0.00005 BNB (5 Refers)\n☄️ Payment Within 12 Hours\n\nThe Airdrop Distribution Is Guaranteed By AirdropV ✔️\n\n⭐️ Helpful Links*\nTelegram Channel | Telegram Group | Twitter | Website | Contract | Airdrop\n\n*⁉️ Dont Miss This Airdrop 🚀*',{disable_web_page_preview:true,parse_mode: 'markdown'})
+    ctx.replyWithMarkdown('[🌐 About The Project](https://explorer.binance.org/)\n\n*🌉 BNB Is A Crypto Whose Price Goes Up And Down\n🚀 Current Price Of BNB Is $400 And Soon It Will Touch $600\n🔥 Our BNB Round 1 & 2 Was Amazing So We Decided To Launch Third Round\n💲 Per Refer 0.00001 BNB\n🛖 Minimum Withdrawal 0.00005 BNB (5 Refers)\n☄️ Payment Within 12 Hours\n\nThe Airdrop Distribution Is Guaranteed By AirdropV ✔️\n\n⭐️ Helpful Links*\nTelegram Channel | Telegram Group | Twitter | Website | Contract | Airdrop\n\n*⁉️ Dont Miss This Airdrop 🚀*',{disable_web_page_preview:true,parse_mode: 'markdown'})
 } catch (err) {
     sendError(err, ctx)
   }
@@ -508,7 +508,7 @@ if(ctx.message.chat.type != 'private'){
 })
 bot.action('Continue ➡️', async (ctx) => {
   try{
-       ctx.editMessageText('🎧 Follow Our [Twitter](http://twitter.com/CryptoFortNews) For Getting Latest Updates About Crypto',
+       ctx.editMessageText('🎧 Follow Our [Twitter I](http://twitter.com/CryptoFortNews) & [Twitter II](https://twitter.com/SkyCity08) For Getting Latest Updates About Crypto',
   
   {parse_mode:'markdown',disable_web_page_preview: true, reply_markup: { inline_keyboard: [[{text : 'Done' , callback_data : 'Done'}]], resize_keyboard: true } })
   .catch((err) => sendError(err, ctx))
