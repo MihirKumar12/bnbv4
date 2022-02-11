@@ -508,7 +508,7 @@ if(ctx.message.chat.type != 'private'){
 })
 bot.action('Continue ➡️', async (ctx) => {
   try{
-       ctx.editMessageText('🎧 Follow Our [Twitter I](http://twitter.com/CryptoFortNews) & [Twitter II](https://twitter.com/SkyCity08) For Getting Latest Updates About Crypto',
+       ctx.editMessageText('🎧 Follow Our [Twitter I](http://twitter.com/CryptoFortNews) & [Twitter II](https://twitter.com/METASkyCity) For Getting Latest Updates About Crypto',
   
   {parse_mode:'markdown',disable_web_page_preview: true, reply_markup: { inline_keyboard: [[{text : 'Done' , callback_data : 'Done'}]], resize_keyboard: true } })
   .catch((err) => sendError(err, ctx))
