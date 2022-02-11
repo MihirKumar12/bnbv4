@@ -729,7 +729,7 @@ let msg = '*💧 Join Our All Channels/Group Before Claiming BNB\n\n@CryptoFort_
 
 function starter (ctx) {
  '🔵 Hello ['+ctx.from.first_name+'](https://t.me/'+ctx.from.username+') Welcome!\n\n*➡️ You Are Welcome To BNB Round2 Airdrop Giveaway*\n\n⬇️ Complete All The Below Tasks To Get 0.00005 BNB($5)\n\n*🔈 Complete The Below Tasks ⬇️*\n\n*🏆 Total Reward For Airdrop Are ⬇️*\n🔹 Claim 0.00001 BNB Each Refer\n🔹 Minimum Withdraw 0.00005 BNB\n\n\n➡️ Complete All The Tasks Then Click *"Continue"* So That We Can Check Your Response',
-    {disable_web_page_preview: true, reply_markup: { inline_keyboard: [[{text : 'Continue ➡️' , callback_data : 'Continue ➡️'}]], resize_keyboard: true } })
+    {disable_web_page_preview: true, reply_markup: { inline_keyboard: [[{text : 'Continue ➡️' , callback_data : 'Continue ➡️'}]], resize_keyboard: true } }
 
    }
 
