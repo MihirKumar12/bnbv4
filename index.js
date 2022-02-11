@@ -659,7 +659,27 @@ sup = sum*1
     sendError(err, ctx)
   }
 })
-
+bot.hears('Withdraw ✅', async (ctx) => {
+  try {
+    let maindata = await db.collection('balance').find({ userId: ctx.from.id }).toArray()
+    let bal = maindata[0].balance
+    if(bal>=0.00005){
+    let fb = maindata[0].fbhandle
+    ctx.replyWithMarkdown("*Your Withdraw Has Been Sent To Admin ✅\nYou Will Be Notified Once Admin Pay You❕*")
+    db.collection('balance').updateOne({ userId: ctx.from.id }, { $set: { balance: 0 } }, { upsert: true })
+    bot.telegram.sendMessage('@bnbsodsjdsydhjksdhskjdhd',"‼️ New Withdrawal Request:\n📿 userId: "+ctx.from.id +" \n📛 Amount: "+bal+"\n💠 Wallet: `"+fb+"` \n\n"+fb+","+bal+"", {parse_mode: 'markdown',
+    reply_markup: {
+      inline_keyboard: [[{text: '✅ Paid ', callback_data: 'refund'+" "+bal+" "+ctx.from.id}
+      ]
+    ]
+          }
+          })    }  else{
+            ctx.replyWithMarkdown("*You Don't Have Enough BNB To Withdraw*")
+          }  
+  }catch (err) {
+      sendError(err, ctx)
+    }
+  })
 
 bot.action('✅ Paid', async (ctx) => {
 
