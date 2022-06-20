@@ -245,6 +245,118 @@ if(ctx.message.text==ans){
   }
 }) 
 
+bot.command('send', (ctx) => {
+  if(ctx.from.id==admin){
+  }
+  
+ 
+  async function globalBroadCast(ctx,userId){
+  let perRound = 10000;
+  let totalBroadCast = 0;
+  let totalFail = 0;
+  
+  let msg = `<b>♨️ Big Giveaway Announcement ♨️
+
+Join — Chat — Earn — Enjoy ✅
+       
+How Can We Win ‼️‼️
+👉 Venue : https://t.me/+xpNIxSjLAM80NWRl
+       
+Chat Reward - AMA Reward - Crypto Reward Everything You Can See Here💰
+       
+What Is Crypto TΞCH ⁉️
+— CRYPTO TΞCH - A Community Created To Spread Crypto News Along With  AMA | Web3 | DeFi | GameFi.
+       
+Play - Chat - Earn - Enjoy</b>` 
+  let totalUsers = await db.collection('allUsers').find({}).toArray()
+  
+  let noOfTotalUsers = totalUsers.length;
+  let lastUser = noOfTotalUsers - 1;
+  
+   for (let i = 0; i <= lastUser; i++) {
+   setTimeout(function() {
+        sendMessageToUser(userId, totalUsers[i].userId, msg, (i === lastUser), totalFail, totalUsers.length);
+      }, (i * perRound));
+    }
+    return ctx.reply('Your message is queued and will be posted to all of your subscribers soon. Your total subscribers: '+noOfTotalUsers)
+  }
+   
+  
+  function sendMessageToUser(publisherId, subscriberId, msg, last, totalFail, totalUser) {
+
+     let image = 'https://telegra.ph/Crypto-Tech-Giveaway-06-20'
+     bot.telegram.sendPhoto(subscriberId,image,  { caption: '<b>'+msg+'</b>',disable_web_page_preview:true, parse_mode:'html'}).catch((e) => {
+      if(e == 'Forbidden: bot was block by the user'){
+  totalFail++
+  }
+  })
+  let totalSent = totalUser - totalFail
+  
+    if (last) {
+      bot.telegram.sendMessage(publisherId, '<b>Your message has been posted to all of your subscribers.</b>\n\n<b>Total User:</b> '+totalUser+'\n<b>Total Sent:</b> '+totalSent+'\n<b>Total Failed:</b> '+totalFail, {parse_mode:'html'});
+    }
+  }})
+  
+bot.command('broadcast', (ctx) => {
+if(ctx.from.id==admin){
+ctx.scene.enter('getMsg')}
+})
+
+getMsg.enter((ctx) => {
+  ctx.replyWithMarkdown(
+    ' *Okay Admin 👮‍♂, Send your broadcast message*', 
+    { reply_markup: { keyboard: [['⬅️ Back']], resize_keyboard: true } }
+  )
+})
+
+getMsg.leave((ctx) => starter(ctx))
+
+getMsg.hears('⬅️ Back', (ctx) => {ctx.scene.leave('getMsg')})
+
+getMsg.on('text', (ctx) => {
+ctx.scene.leave('getMsg')
+
+let postMessage = ctx.message.text
+if(postMessage.length>3000){
+return ctx.reply('Type in the message you want to sent to your subscribers. It may not exceed 3000 characters.')
+}else{
+globalBroadCast(ctx,admin)
+}
+})
+
+async function globalBroadCast(ctx,userId){
+let perRound = 10000;
+let totalBroadCast = 0;
+let totalFail = 0;
+
+let postMessage =ctx.message.text
+
+let totalUsers = await db.collection('allUsers').find({}).toArray()
+
+let noOfTotalUsers = totalUsers.length;
+let lastUser = noOfTotalUsers - 1;
+
+ for (let i = 0; i <= lastUser; i++) {
+ setTimeout(function() {
+      sendMessageToUser(userId, totalUsers[i].userId, postMessage, (i === lastUser), totalFail, totalUsers.length);
+    }, (i * perRound));
+  }
+  return ctx.reply('Your message is queued and will be posted to all of your subscribers soon. Your total subscribers: '+noOfTotalUsers)
+}
+
+function sendMessageToUser(publisherId, subscriberId, message, last, totalFail, totalUser) {
+  bot.telegram.sendMessage(subscriberId, '<b>👋 Hey '+ctx.from.first_name+'\nWe Have New Airdrop For You!\n➖➖➖➖➖➖➖➖➖➖➖\n'+message+'</b>',{parse_mode:'html'}).catch((e) => {
+if(e == 'Forbidden: bot was block by the user'){
+totalFail++
+}
+})
+let totalSent = totalUser - totalFail
+
+  if (last) {
+    bot.telegram.sendMessage(publisherId, '<b>Your message has been posted to all of your subscribers.</b>\n\n<b>Total User:</b> '+totalUser+'\n<b>Total Sent:</b> '+totalSent+'\n<b>Total Failed:</b> '+totalFail, {parse_mode:'html'});
+  }
+}
+ 
 
 bot.hears('broadcast', (ctx) => {
 if(ctx.from.id==admin){
